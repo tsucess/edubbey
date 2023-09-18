@@ -5,7 +5,7 @@
 if(isset($_POST['g-recaptcha-response']) && isset($_POST['submit'])){
     
     
-    $secretkey = "6LdDaoMkAAAAAG7oYjO5ExlwHWNIbEvgTo_5sSrT";
+    $secretkey = "";
     // $ip = $_SERVER['REMOTE_ADDR'];
     $response = $_POST['g-recaptcha-response'];
     $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$response";
@@ -16,8 +16,6 @@ if(isset($_POST['g-recaptcha-response']) && isset($_POST['submit'])){
     if ($data->success==true){
         
         $from = "info@edubbey.com"; //Mail created form your site
-        // $to = "sodiq.akinyele@edubbey.com";   // Receiver Address
-        // $to = "sheriff@edubbey.com";   // Receiver Address
         $to = "ogunsanya.taofeeq@edubbey.com";   // Receiver Address
     
     $fname = filter_var($_POST['fname'], FILTER_SANITIZE_FULL_SPECIAL_CHARS); // User First Name

@@ -8,7 +8,7 @@ require "../config/database.php";
 
 if($_POST['fname']){
 
-    $from = "admin@sevenskiesportal.edu.my"; //Mail created form your site
+    $from = ""; //Mail created form your site
     $to = "taofeeq.muhammad22@gmail.com";   // Receiver Address
     
     $fname = mysqli_real_escape_string($dbconnect, $_POST['fname']); // User First Name
