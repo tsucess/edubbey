@@ -1,4 +1,4 @@
-<?php
+go<?php
 session_start();
 
 /* 
@@ -6,8 +6,8 @@ session_start();
 * Remember to switch to your live publishable and secret key in production! 
 * See your keys here: https://dashboard.stripe.com/account/apikeys 
 */ 
-define('STRIPE_API_KEY', 'sk_test_51M8gsDF40aFcudqwszr1s4EwHB2gSSU4n1QD8IuLUCzfnxKGj1UElNp3ukYbdNKnTirdrqO3FBYGkRVFLjGqZIH900OS0aBJDA'); 
-define('STRIPE_PUBLISHABLE_KEY', 'pk_test_51M8gsDF40aFcudqwf4fobv76bLGkR9wuY97zuN1qQ7bBtGzFuwTFIssJOnXyzYeNF7DyKrkXh0gbS8o4ixbk1PE5007S1edfLo');
+define('STRIPE_API_KEY', ''); 
+define('STRIPE_PUBLISHABLE_KEY', '');
 define('STRIPE_SUCCESS_URL', 'http://localhost/edubbey/subscription-system/backend/payment-success.php'); //Payment success URL 
 define('STRIPE_CANCEL_URL', 'http://localhost/edubbey/subscription-system/backend/payment-cancel.php'); //Payment cancel URL 
 
